@@ -1,4 +1,4 @@
-﻿var total = 0;
+var total = 0;
 var tarifacao = 0;
 
 //constantes
@@ -187,7 +187,6 @@ function atualizarTabela() {
             var linhaTabela =
                 // selecionarLinha(qntLinhasTabela)
                 '<tr onclick="">' +
-                '<td>' + item.id + '</td>' +
                 '<td>' + item.nome + '</td>' +
                 '<td>' + item.quantidade + '</td>' +
                 '<td>' + item.potencia + "W" + '</td>' +
@@ -195,7 +194,7 @@ function atualizarTabela() {
                 '<td>' + item.dias + '</td>' +
                 '<td>' + (item.gastoTotal.toFixed(2)) + " kWh" + '</td>' +
                 //R$ 07/06/2018
-                '<td>' + "R$ " + (item.tarifacao.toFixed(2)) + '</td>' +
+                '<td>' + "BRL " + (item.tarifacao.toFixed(2)) + '</td>' +
                 '<td class="iconeExcluir" onclick="deletarLinha(' +
                 (tabela.rows.length - 1) + "," + item.id + "," +
                 item.quantidade + "," + item.potencia + "," + item.dias +
